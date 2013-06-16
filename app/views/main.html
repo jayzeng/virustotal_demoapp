@@ -1,0 +1,55 @@
+<div class="navbar navbar-inverse">
+    <h3><img src="images/virustotal-logo-small.png"/> API v2.0 PHP Wrapper Library Demo app</h3>
+    <a href="https://github.com/jayzeng/virustotal_demoapp">
+        <img class="sidebar-nav-fixed" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub">
+   </a>
+</div>
+
+<hr>
+
+<div class="">
+  <span class="input-url">
+      <form >
+          <input type="input" class="input-large search-query" placeholder="type in a url..." ng-model="url">
+          <input class="btn btn-success" type="submit" value="Enter URL" ng-click="validateUrl()" ng-submit="validateUrl()">
+      </form >
+  </span>
+
+  <span class="url-status">
+    <span class="verbose_message">
+        {{data.verbose_msg}}
+    </span>
+    <span id="url-info" ng-show="data.scans">
+        <div class="border" id="url-higlight">
+            <ul class="unstyled">
+                <li>URL: <a href="{{data.url}}">{{data.url}}</a></li>
+                <li>Report permalink: <a href="{{data.permalink}}">{{data.permalink}}</a></li>
+                <li>Detection ratio: <span class="text-green">{{data.positives}}/{{data.total}}</span></li>
+                <li>Analysis date: {{data.scan_date}}</li>
+            </ul>
+        </div>
+        <input type="text" ng-model="search" class="input-xlarge search-query" placeholder="Search URL Scanner or site result status">
+        </p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="">URL Scanner</th>
+                    <th class="">Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="(key, val) in data.scans | contains:search">
+                  <td>{{key}}</td>
+                  <td>
+                      <span ng-switch on='val.result'>
+                          <span class='text-green' ng-switch-when='clean site'>{{val.result}}</span>
+                          <span class='text-orange' ng-switch-when='suspicious site'>{{val.result}}</span>
+                          <span class='text-gray' ng-switch-when='unrated site'>{{val.result}}</span>
+                      </span>
+                  </td>
+                </tr>
+            <tbody>
+        </table>
+    </span>
+  </span>
+</div>

@@ -1,0 +1,26 @@
+{
+    "name": "jayzeng/virustotalapi-demoapp",
+    "description": "VirusTotal Public API v2.0 PHP Wrapper Demo App",
+    "type": "library",
+    "homepage": "https://github.com/jayzeng/virustotal_apiwrapper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Zeng",
+            "email": "jayzeng@jay-zeng.com",
+            "homepage": "http://jay-zeng.com"
+        }
+    ],
+    "require": {
+        "jayzeng/virustotalapi": "v0.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "API": "Api/"
+        }
+    },
+    "config": {
+        "vendor-dir" : "Vendors",
+        "vendor-bin" : "Vendors/bin"
+    }
+}

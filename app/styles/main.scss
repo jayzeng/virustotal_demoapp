@@ -1,0 +1,46 @@
+@import "compass_twitter_bootstrap";
+
+.text-red {
+  color: #b40c1a;
+}
+
+.text-green {
+  color: #379f32;
+}
+
+.text-orange {
+  color: #ffac29;
+}
+
+.text-gray {
+  color: #b0a7a7;
+}
+
+.text-black {
+  color: #333333;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.border {
+  border:1px solid #ddd;
+}
+
+div#url-higlight {
+  margin: 20px 0;
+  padding: 20px 10px;
+}
+
+.sidebar-nav-fixed {
+  background-position:fixed;
+  position:absolute;
+  top:0px;
+  right:0px;
+  border:0px;
+}
+
+.fixed {
+  position:fixed;
+}

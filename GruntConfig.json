@@ -1,0 +1,10 @@
+{
+	"virusTotal": {
+		"dev": {
+               "apikey": "devkey"
+          },
+          "prod": {
+               "apikey": "prodkey"
+          }
+     }
+}
