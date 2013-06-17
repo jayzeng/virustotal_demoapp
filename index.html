@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Virustotal demoapp by jayzeng</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/jayzeng/virustotal_demoapp">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/jayzeng/virustotal_demoapp/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/jayzeng/virustotal_demoapp/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Virustotal demoapp</h1>
+          <p>Virus Total Public API v2 PHP Wrapper Demo Application</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/jayzeng">jayzeng</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>
+<a name="project" class="anchor" href="#project"><span class="octicon octicon-link"></span></a>Project:</h2>
+
+<p>Demo Application builds on top of the Virus Total Public API v2.0 PHP Wrapper library (<a href="https://github.com/jayzeng/virustotal_apiwrapper">https://github.com/jayzeng/virustotal_apiwrapper</a>)</p>
+
+<p>This application is used to illustrate how to use the wrapper library and I would suggest you NOT to use it on production without 
+carefully reviewing the source code. The app is built on top of angularjs (angularjs.org). </p>
+
+<p>Project skeleton was generated with:</p>
+
+<ul>
+<li>yaomen (yeoman.io/)</li>
+<li>generator-angular (<a href="https://github.com/yeoman/generator-angular">https://github.com/yeoman/generator-angular</a>)</li>
+<li>generator-karam   (<a href="https://github.com/yeoman/generator-karma">https://github.com/yeoman/generator-karma</a>)</li>
+</ul><h2>
+<a name="screenshot" class="anchor" href="#screenshot"><span class="octicon octicon-link"></span></a>Screenshot:</h2>
+
+<p><img src="virus_total_demoapp.png" alt="screenshot"></p>
+
+<h2>
+<a name="dev-dependencies" class="anchor" href="#dev-dependencies"><span class="octicon octicon-link"></span></a>Dev Dependencies:</h2>
+
+<ul>
+<li>yo - yeoman  (npm install yo)</li>
+<li>bower        (npm install bower)</li>
+<li>grunt        (npm install bower)</li>
+<li>grunt-cli    (npm install bower)</li>
+<li>compass      (gem install compass)</li>
+</ul><p>You may install them via npm install</p>
+
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install:</h2>
+
+<ul>
+<li>bower install</li>
+<li>npm install</li>
+<li>open up GruntConfig.json (<a href="https://github.com/jayzeng/virustotal_demoapp/blob/master/GruntConfig.json">https://github.com/jayzeng/virustotal_demoapp/blob/master/GruntConfig.json</a>), put in your api key</li>
+</ul><h2>
+<a name="run" class="anchor" href="#run"><span class="octicon octicon-link"></span></a>Run:</h2>
+
+<p>Run local server</p>
+
+<div class="highlight"><pre>grunt server
+</pre></div>
+
+<p>Trigger unit test</p>
+
+<div class="highlight"><pre>grunt <span class="nb">test</span>
+</pre></div>
+
+<p>Deploy to your server:</p>
+
+<div class="highlight"><pre>grunt build
+</pre></div>
+
+<p>This generates all source code to the dist folder. </p>
+
+<p>List available grunt tasks:</p>
+
+<div class="highlight"><pre>grunt --help
+</pre></div>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
